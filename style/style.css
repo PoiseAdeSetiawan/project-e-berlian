@@ -2,6 +2,7 @@
 @import url('../vendor/font.css');
 @import url('../block/header.css');
 @import url('../block/navigation.css');
+@import url('../block/about.css');
 
 * {
     margin: 0;
