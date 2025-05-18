@@ -9,7 +9,51 @@
 </head>
 
 <body>
+    <section class="navigation">
+        <a class="navigation_logo" href="#">E-Berlian</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navigation_item-right">
+            <a class="navigation_item" href="#">Home</a>
+            <a class="navigation_item" href="#">Tentang</a>
+            <a class="navigation_item" href="#">Pendaftaran</a>
+            <a class="navigation_item" href="#">Pengumuman</a>
+            <a class="navigation_item" href="#">Kontak</a>
+        </div>
+
+    </section>
+    <section class="header" id="vanta">
+        <div class="header_content">
+            <h1 class="header_title">Selamat Datang <br>di E-Berlian</h1>
+            <p class="header_subtitle">Elektronik Berkas Riset dan Penelitian</p>
+            <button class="header_button">Selanjutnya</button>
+        </div>
+        <img class="header_image" src="resource/image/logo-e-berlian.png" alt="">
+    </section>
+
     <script src="script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x41457,
+            midtoneColor: 0x6905a4,
+            lowlightColor: 0x2f0470,
+            baseColor: 0x90150,
+            blurFactor: 0.50,
+            speed: 1.00,
+            zoom: 0.50
+        })
+    </script>
 </body>
 
 </html>

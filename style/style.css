@@ -1,0 +1,17 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/font.css');
+@import url('../block/header.css');
+@import url('../block/navigation.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+}
