@@ -4,6 +4,9 @@
 @import url('../block/navigation.css');
 @import url('../block/about.css');
 @import url('../block/service.css');
+@import url('../block/contact.css');
+@import url('../block/footer.css');
+@import url('../block/whatsapp-buble.css');
 
 * {
     margin: 0;
