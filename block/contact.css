@@ -52,6 +52,17 @@
     border-radius: 8px;
     padding: 14px 18px;
     box-shadow: 0 1px 6px rgba(25, 25, 112, 0.06);
+    text-decoration: none;
+    /* Make sure links have no underline */
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    /* Show pointer on hover */
+}
+
+.contact_item:hover {
+    background: #e0e6f6;
+    box-shadow: 0 2px 12px rgba(25, 25, 112, 0.13);
+    text-decoration: none;
 }
 
 .contact_icon {
