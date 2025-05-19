@@ -41,6 +41,14 @@ headerButton.addEventListener('click', function () {
     smoothScrollTo(aboutSection, 400);
 });
 
+//services button
+function redirectToRegistration() {
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfMO0cmpBuEsthhCUR_yFL7u_u-cFLhrWP8L4rUzM6dDtuvGg/viewform?usp=dialog';
+}
+function redirectToAnnouncement() {
+    window.location.href = 'https://drive.google.com/drive/folders/1pvwAKxM6hdMdfYPtXdGCwo4iomabgS7I?usp=sharing';
+}
+
 //whatsapp buble
 function redirectToWhatsApp() {
     window.location.href = 'https://wa.me/62895640966000';
