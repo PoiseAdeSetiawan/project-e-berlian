@@ -2,6 +2,8 @@
 
 **E-Berlian** adalah sebuah platform digital yang dikembangkan oleh **Pengadilan Negeri Kediri** untuk memfasilitasi proses pengajuan permohonan izin penelitian dan riset secara online. Aplikasi ini ditujukan khusus bagi mahasiswa dari universitas atau perguruan tinggi yang ingin melakukan penelitian atau riset di lingkungan Pengadilan Negeri Kediri.
 
+link : [E-Berlian](https://poiseadesetiawan.github.io/project-e-berlian/)
+
 ## 🚀 Fitur Utama
 
 - 📝 **Pengajuan Permohonan Online**  
