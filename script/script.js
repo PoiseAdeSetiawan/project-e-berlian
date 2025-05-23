@@ -2,8 +2,35 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const navigation = document.querySelector('.navigation');
+    const navItems = document.querySelectorAll('.navigation_item-right .navigation_item');
+
     hamburger.addEventListener('click', function () {
         navigation.classList.toggle('open');
+    });
+
+    // Close nav menu on item click (for mobile)
+    navItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            if (window.innerWidth <= 970) {
+                navigation.classList.remove('open');
+            }
+        });
+    });
+
+    // Scroll registration/announcement to center of viewport
+    document.querySelectorAll('.navigation_item[href="#registration"], .navigation_item[href="#announcement"]').forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').replace('#', '');
+            const section = document.getElementById(targetId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            // Optionally close nav on mobile
+            if (window.innerWidth <= 970) {
+                navigation.classList.remove('open');
+            }
+        });
     });
 });
 
@@ -43,10 +70,16 @@ headerButton.addEventListener('click', function () {
 
 //services button
 function redirectToRegistration() {
-    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfMO0cmpBuEsthhCUR_yFL7u_u-cFLhrWP8L4rUzM6dDtuvGg/viewform?usp=dialog';
+    window.open(
+        'https://docs.google.com/forms/d/e/1FAIpQLSfMO0cmpBuEsthhCUR_yFL7u_u-cFLhrWP8L4rUzM6dDtuvGg/viewform?usp=dialog',
+        '_blank'
+    );
 }
 function redirectToAnnouncement() {
-    window.location.href = 'https://drive.google.com/drive/folders/1pvwAKxM6hdMdfYPtXdGCwo4iomabgS7I?usp=sharing';
+    window.open(
+        'https://drive.google.com/drive/folders/1pvwAKxM6hdMdfYPtXdGCwo4iomabgS7I?usp=sharing',
+        '_blank'
+    );
 }
 
 //whatsapp buble
