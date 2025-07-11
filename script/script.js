@@ -76,8 +76,8 @@ function redirectToRegistration() {
     );
 }
 function redirectToAnnouncement() {
-    window.open(
-        'https://drive.google.com/drive/folders/1pvwAKxM6hdMdfYPtXdGCwo4iomabgS7I?usp=sharing',
+window.open(
+        'http://192.168.10.89/file-updown/login.php',
         '_blank'
     );
 }
